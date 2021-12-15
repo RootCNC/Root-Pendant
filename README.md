@@ -19,6 +19,7 @@ This is a preliminary repo to gain ideas and assess the pendant implementation p
 - Universal 
 - Open source!
 ## Initial placement and Ideas
+
 <img align="Left" width=400 src="https://github.com/RootCNC/Root-Pendant/blob/main/Media/OutlinePlan.PNG" />
 
 ## License
