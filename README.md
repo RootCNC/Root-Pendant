@@ -27,7 +27,8 @@ This is a preliminary repo to gain ideas and assess the pendant implementation p
 ## Initial placement and Ideas
 
 <img width=400 src="https://github.com/RootCNC/Root-Pendant/blob/main/Media/OutlinePlan.PNG" />
-
+FRO - Feedrate Override
+SSO - Spindle Speed Override
 ## License
 
 This project is licensed under the Creative Commons 4.0 license with 
