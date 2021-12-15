@@ -1,6 +1,25 @@
-<img align="right" width=175 src="https://github.com/RootCNC/Root-4-CNC/blob/master/Media/R_Logo.png" />
+
+<img align="right" width=175 src="https://github.com/RootCNC/Root-Pendant/blob/main/Media/R_Logo.png" />
 
 # Root Pendant
+CNC pendant for control of the *Root CNC* and any other *CNC machines*
+
+This is a preliminary repo to gain ideas and assess the pendant implementation practically 
+
+## Project goals.
+- Be as flexible as possible
+- Offer USB 2.0 host and slave support for either controlling the CNC directly or via a PC 
+- Support Wifi for wireless controlling
+- Support 6 Axis
+- Support all of the standard features
+-- Manual job movement
+-- Spindle control
+-- Feedrate control
+-- Start/Stop/Hold
+- Universal 
+- Open source!
+## Initial placement and Ideas
+<img align="Left" width=400 src="https://github.com/RootCNC/Root-Pendant/blob/main/Media/OutlinePlan.PNG" />
 
 ## License
 
