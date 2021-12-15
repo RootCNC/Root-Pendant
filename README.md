@@ -8,7 +8,7 @@ This is a preliminary repo to gain ideas and assess the pendant implementation p
 
 ## Project goals.
 - Be as flexible as possible
-- Offer USB 2.0 *Host* and *Slave* support for either controlling the CNC directly or via a PC 
+- Offer USB 2.0 Type C *Host* and *Slave* support for either controlling the CNC directly or via a PC 
 - Support Wifi/Bluetooh for wireless control
 - Support 6 Axis
 - Support all of the standard features
