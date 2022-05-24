@@ -26,88 +26,54 @@ This is a preliminary repo to gain ideas and assess the pendant implementation p
 - Raspberry Pi Zero 2 W [Link](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
 
 ```mermaid
-
 graph LR
-
 A((Root Pendant)) -- Acts as keyboard - Via USB --> B(PC Host)
-
 B --> C(PC Controller software - UGS)
-
 C --> D{CNC Motion controller}
-
 A -- Direct control of CNC - Via USB --> D{CNC Motion controller}
-
 A -- Direct control of CNC - Via Telnet WiFi--> D{CNC Motion controller}
-
 A --> E((CNCjS))
-
 E --> A
-
 E -- Direct control of CNC - Via USB--> D
-
 E -- Direct control of CNC - Via Telnet WiFi--> D
-
-``````
+`````
 
  
 
 ## Implemented interfaces
 
- 
-
 - [ ] Root Pendant as USB Slave - setup as USB keyboard for macro implementation with PC based CNC control software (USG)
-
-- [ ]  Root Pendant as USB Host - Control of CNC controller via USB
-
+- [ ] Root Pendant as USB Host - Control of CNC controller via USB
 - [ ] Root Pedant control controls CNC controller via Telnet (Current known controller: Root Controller ISO (FluidNC),  Duet 3 6HC W/SBC)
-
 - [ ] Root Pendant running CNCjs connected via the Boiler Plate addon (CNCjs controls the CNC and Root Pendant talks directly to CNCjs (CNCjs Handles the connection to the CNC, either via Telnet or direct USB connection)
 
  
 
 ## Software development list
 
-- [ ] GUI
+### GUI
+- [ ] Main display
+- [ ] Settings menu
+- [ ] Touchscreen cal page
 
-                -  [ ] Main display
+### IO
+- [ ] Touchscreen controller
+- [ ] Keypad controller
+- [ ] Jog wheel control
+- [ ] Mode control
+- [ ] Enable control
+- [ ] USB controller
+- [ ] Keypad LED and Power controller controller
+- [ ] USB
+- [ ]  Type-C implementation
 
-                -  [ ] Settings menu
-
-                -  [ ] Touchscreen cal page
-
-- [ ] IO
-
-                - [ ] Touchscreen controller
-
-                - [ ] Keypad controller
-
-                - [ ] Jog wheel control
-
-                - [ ] Mode control
-
-                - [ ] Enable control
-
-                - [ ] USB controller
-
-                - [ ] Keypad LED and Power controller controller
-
-                - [ ] USB
-
-                                - [ ]  Type-C implementation
-
-- [ ] Backend stuff
-
-                - [ ] User-Save settings
-
-                - [ ] Power up and power down states
-
-                - [ ] 5V USB OTG control
-
-                - [ ] Low Batter indication
-
-                - [ ] Raspberry Pi LCD control
-
-                - [ ] E-stop
+### Backend stuff
+- [ ] User-Save settings
+- [ ] Power up and power down states
+- [ ] 5V USB OTG control
+- [ ] Low Batter indication
+- [ ] Raspberry Pi LCD control
+- [ ] E-stop
 
 ## Initial placement and Ideas
 <img width=400 src="https://github.com/RootCNC/Root-Pendant/blob/main/Media/OutlinePlan.PNG" />
