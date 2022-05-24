@@ -25,6 +25,8 @@ This is a preliminary repo to gain ideas and assess the pendant implementation p
 - 16mm E-Stop button [Link](https://s.click.aliexpress.com/e/_A71fQ2)
 - Raspberry Pi Zero 2 W [Link](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
 
+
+## Key Dataflow paths
 ```mermaid
 graph LR
 A((Root Pendant)) -- Acts as keyboard - Via USB --> B(PC Host)
