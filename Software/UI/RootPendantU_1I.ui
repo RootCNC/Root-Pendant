@@ -104,7 +104,7 @@ QPushButton{
 	border:none;
 }
 QPushButton:hover{
-	background:blue;
+	background-color: rgb(85, 170, 255);
 	border:none;
 }
 
@@ -222,8 +222,7 @@ QPushButton:hover{
               <widget class="QPushButton" name="RootBtn">
                <property name="font">
                 <font>
-                 <family>Harlow Solid</family>
-                 <pointsize>16</pointsize>
+                 <pointsize>12</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -307,6 +306,11 @@ QPushButton:hover{
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	border-radius:6px;
+}</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -319,7 +323,7 @@ QPushButton:hover{
             <x>-240</x>
             <y>0</y>
             <width>240</width>
-            <height>266</height>
+            <height>251</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -364,14 +368,17 @@ QPushButton{
            </property>
           </widget>
          </widget>
-         <widget class="QFrame" name="frame_5">
+         <widget class="QFrame" name="MainFrame">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>240</width>
-            <height>266</height>
+            <height>251</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
           <property name="frameShape">
            <enum>QFrame::StyledPanel</enum>
@@ -383,7 +390,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>130</y>
+             <y>140</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -393,6 +400,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -405,7 +415,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>130</x>
-             <y>130</y>
+             <y>140</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -415,6 +425,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -427,10 +440,21 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>0</x>
-             <y>90</y>
+             <y>100</y>
              <width>16</width>
              <height>16</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:3px;
+	background-color: rgb(85, 170, 255);
+}</string>
            </property>
            <property name="text">
             <string>Y</string>
@@ -443,7 +467,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>150</x>
-             <y>110</y>
+             <y>120</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -453,6 +477,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -465,10 +492,21 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>110</x>
-             <y>40</y>
+             <y>50</y>
              <width>16</width>
              <height>16</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:3px;
+	background-color: rgb(85, 170, 255);
+}</string>
            </property>
            <property name="text">
             <string>A</string>
@@ -481,7 +519,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>130</x>
-             <y>30</y>
+             <y>40</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -491,6 +529,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -503,7 +544,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>40</x>
-             <y>60</y>
+             <y>70</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -513,6 +554,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -525,7 +569,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>30</y>
+             <y>40</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -533,8 +577,14 @@ QPushButton{
            <property name="frameShape">
             <enum>QFrame::NoFrame</enum>
            </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -547,7 +597,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>40</x>
-             <y>110</y>
+             <y>120</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -557,6 +607,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -569,7 +622,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>130</x>
-             <y>80</y>
+             <y>90</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -579,6 +632,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -591,7 +647,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>150</x>
-             <y>160</y>
+             <y>170</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -601,6 +657,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -613,10 +672,21 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>0</x>
-             <y>140</y>
+             <y>150</y>
              <width>16</width>
              <height>16</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:2px;
+	background-color: rgb(85, 170, 255);
+}</string>
            </property>
            <property name="text">
             <string>Z</string>
@@ -629,10 +699,21 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>110</x>
-             <y>140</y>
+             <y>150</y>
              <width>16</width>
              <height>16</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:3px;
+	background-color: rgb(85, 170, 255);
+}</string>
            </property>
            <property name="text">
             <string>C</string>
@@ -645,10 +726,16 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>10</y>
+             <y>9</y>
              <width>201</width>
-             <height>20</height>
+             <height>25</height>
             </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>0</height>
+            </size>
            </property>
            <property name="palette">
             <palette>
@@ -665,9 +752,9 @@ QPushButton{
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -737,18 +824,18 @@ QPushButton{
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -811,9 +898,9 @@ QPushButton{
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -883,18 +970,18 @@ QPushButton{
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -957,9 +1044,9 @@ QPushButton{
               <colorrole role="Button">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>0</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1029,18 +1116,18 @@ QPushButton{
               <colorrole role="Base">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
               <colorrole role="Window">
                <brush brushstyle="SolidPattern">
                 <color alpha="255">
-                 <red>255</red>
-                 <green>0</green>
-                 <blue>0</blue>
+                 <red>85</red>
+                 <green>170</green>
+                 <blue>255</blue>
                 </color>
                </brush>
               </colorrole>
@@ -1098,7 +1185,10 @@ QPushButton{
             </font>
            </property>
            <property name="autoFillBackground">
-            <bool>true</bool>
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 170, 255);</string>
            </property>
            <property name="text">
             <string>OFFLINE</string>
@@ -1111,7 +1201,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>40</x>
-             <y>160</y>
+             <y>170</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -1121,6 +1211,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -1133,7 +1226,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>150</x>
-             <y>60</y>
+             <y>70</y>
              <width>71</width>
              <height>21</height>
             </rect>
@@ -1143,6 +1236,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -1155,7 +1251,7 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>80</y>
+             <y>90</y>
              <width>91</width>
              <height>31</height>
             </rect>
@@ -1165,6 +1261,9 @@ QPushButton{
            </property>
            <property name="digitCount">
             <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
            </property>
            <property name="value" stdset="0">
             <double>10000.000000000000000</double>
@@ -1177,10 +1276,21 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>0</x>
-             <y>40</y>
+             <y>50</y>
              <width>16</width>
              <height>16</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:3px;
+	background-color: rgb(85, 170, 255);
+}</string>
            </property>
            <property name="text">
             <string>X</string>
@@ -1193,13 +1303,140 @@ QPushButton{
            <property name="geometry">
             <rect>
              <x>110</x>
-             <y>90</y>
+             <y>100</y>
              <width>16</width>
              <height>16</height>
             </rect>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:3px;
+	background-color: rgb(85, 170, 255);
+}</string>
+           </property>
            <property name="text">
             <string>B</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="FeedRateLB">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>195</y>
+             <width>121</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:2px;
+	#background-color: rgb(85, 170, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Feed Rate:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLCDNumber" name="FEEDRATE">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>200</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="digitCount">
+            <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+           <property name="value" stdset="0">
+            <double>10000.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>10000</number>
+           </property>
+          </widget>
+          <widget class="QLCDNumber" name="SPINDLE">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>220</y>
+             <width>71</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="digitCount">
+            <number>7</number>
+           </property>
+           <property name="segmentStyle">
+            <enum>QLCDNumber::Flat</enum>
+           </property>
+           <property name="value" stdset="0">
+            <double>10000.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>10000</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="SpindleRateLB">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>220</y>
+             <width>121</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	border-radius:2px;
+	#background-color: rgb(85, 170, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Spindle Rate:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1215,13 +1452,13 @@ QPushButton{
             <x>240</x>
             <y>0</y>
             <width>240</width>
-            <height>266</height>
+            <height>251</height>
            </rect>
           </property>
           <property name="minimumSize">
            <size>
             <width>240</width>
-            <height>266</height>
+            <height>251</height>
            </size>
           </property>
           <property name="maximumSize">
@@ -1267,7 +1504,7 @@ QPushButton{
            </item>
           </layout>
          </widget>
-         <zorder>frame_5</zorder>
+         <zorder>MainFrame</zorder>
          <zorder>SettingsFrame</zorder>
          <zorder>FileFrame</zorder>
         </widget>
@@ -1277,17 +1514,17 @@ QPushButton{
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>25</height>
+           <height>45</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>16777215</width>
-           <height>25</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 127);</string>
+          <string notr="true">background-color: rgb(18, 18, 18);</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>

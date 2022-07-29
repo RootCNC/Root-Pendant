@@ -17,12 +17,24 @@ class RootPendant_Main(QMainWindow):
         self.ui.MenuBtn.clicked.connect(self.SlideLeftMenu)
         self.ui.FilesBtn.clicked.connect(self.FilesRightMenu)
         self.ui.RootBtn.clicked.connect(self.Close)
+        id = QFontDatabase.addApplicationFont("Font/Harlow Solid Regular.ttf")
+        if id < 0:
+            print("Error - Failed to load Font!")
+        else:
+            families = QFontDatabase.applicationFontFamilies(id)
+            print(families[0])
+            self.ui.RootBtn.setFont(QFont(families[0],16))
+            
         flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
         self.setWindowFlags(flags)
         self.StartMainWorkerThread()
 
+        self.ui.B_AXIS.setStyleSheet("background-color: rgb(85, 170, 255);")
+
     def Close(self):
         self.close()
+        app.quit()
+        sys.exit(app.exec_())
 
     def SlideLeftMenu(self):
         Duration=0
@@ -145,3 +157,4 @@ if __name__ == "__main__":
         app.exec()
     except KeyboardInterrupt:
         print('interrupted!')
+        app.quit()
