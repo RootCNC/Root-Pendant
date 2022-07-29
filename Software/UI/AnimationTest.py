@@ -16,8 +16,9 @@ class RootPendant_Main(QMainWindow):
         self.ui.setupUi(self)
         self.ui.MenuBtn.clicked.connect(self.SlideLeftMenu)
         self.ui.FilesBtn.clicked.connect(self.FilesRightMenu)
-        #flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
-        #self.setWindowFlags(flags)
+        self.ui.RootBtn.clicked.connect(self.Close)
+        flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
+        self.setWindowFlags(flags)
         self.StartMainWorkerThread()
 
     def Close(self):
@@ -31,6 +32,8 @@ class RootPendant_Main(QMainWindow):
             NewPos.setX(0)
         else:
             NewPos.setX(-240)
+
+        #if self.FilesRightMenu_IsShown(self): self.FilesRightMenu(self)
         
         print("OlD ", pos.x(),"Files Menu New Pos", NewPos.x())
         if Duration == 0: Duration=300

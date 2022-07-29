@@ -1,0 +1,19 @@
+
+wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tgz
+tar -zxvf Python-3.10.5.tgz
+cd Python-3.10.5
+./configure --enable-optimizations
+sudo make altinstall
+cd /usr/bin
+sudo rm python
+sudo ln -s /usr/local/bin/python3.10 python
+python --version
+
+sudo apt update
+sudo apt install python3-pyqt5
+
+
+
+
+
+git clone -b Dev https://github.com/RootCNC/Root-Pendant.git temp
