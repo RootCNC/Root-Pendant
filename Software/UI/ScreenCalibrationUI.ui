@@ -183,6 +183,9 @@
    </property>
   </widget>
   <widget class="QLabel" name="Step_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -224,7 +227,7 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QLCDNumber" name="Y_Val_2">
+  <widget class="QLCDNumber" name="Z_Val">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -257,6 +260,19 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Close">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
    </property>
   </widget>
  </widget>
