@@ -16,6 +16,12 @@ if match:
             elif "MPos:" in match2[q]:
                 temp = match2[q].replace("MPos:","")
                 match3 = re.split("[,]",temp)
+                Mpos_X = 0.0
+                Mpos_Y = 0.0
+                Mpos_Z = 0.0
+                Mpos_A = 0.0
+                Mpos_B = 0.0
+                Mpos_C = 0.0
                 for e in range(len(match3)):
                     if e == 0:
                         Mpos_X = float(match3[e])
@@ -32,6 +38,12 @@ if match:
             elif "WCO:" in match2[q]:
                 temp = match2[q].replace("WCO:","")
                 match3 = re.split("[,]",temp)
+                WCO_X = 0.0
+                WCO_Y = 0.0
+                WCO_Z = 0.0
+                WCO_A = 0.0
+                WCO_B = 0.0
+                WCO_C = 0.0
                 for e in range(len(match3)):
                     if e == 0:
                         WCO_X = float(match3[e])
@@ -53,7 +65,28 @@ if match:
                         FeedRate = float(match3[e])
                     elif e == 1:
                         SpindleSpeed = float(match3[e])
-            
+            elif "Pn:" in match2[q]:
+                temp = match2[q].replace("Pn:","")
+                match3 = re.split("[,]",temp)
+                X_LimTrig = False
+                Y_LimTrig = False
+                Z_LimTrig = False
+                A_LimTrig = False
+                B_LimTrig = False
+                C_LimTrig = False
+                for e in range(len(match3)):
+                    if match3[e] == "X":
+                        X_LimTrig = True
+                    elif match3[e] == "Y":
+                        Y_LimTrig = True
+                    elif match3[e] == "Z":
+                        Z_LimTrig = True
+                    elif match3[e] == "A":
+                        A_LimTrig = True
+                    elif match3[e] == "B":
+                        B_LimTrig = True
+                    elif match3[e] == "C":
+                        C_LimTrig = True
 else:
     print('did not find')
 print("end")

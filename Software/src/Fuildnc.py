@@ -1,11 +1,6 @@
-import telnetlib
-import time
 import re
 
-print("Starting Telnet Demo")
-
-Connection = False
-Status_Dict = {"X_M":0,"X_WCO":0, \
+Status_Dict =  {"X_M":0,"X_WCO":0, \
             "Y_M":0,"Y_WCO":0, \
             "Z_M":0,"Z_WCO":0, \
             "A_M":0,"A_WCO":0, \
@@ -22,17 +17,6 @@ Status_Dict = {"X_M":0,"X_WCO":0, \
             "MSG": 'EMPTY', \
             "Status":'Not Connected' }
 
-#Telnet IP
-Telnet_HOST = "192.168.0.67"
-Telnet_PORT = "23"
-try:
-    tn = telnetlib.Telnet(Telnet_HOST,Telnet_PORT,5)
-    Connection = True
-    Status_Dict["Status"] ='Connected'
-except:
-    print("Failed to connect")
-    Connection = False
-    Status_Dict["Status"] ='Not Connected'
 
 def ParseResponse(Msg):
     print("Parsing the returned Mesage = " + Msg)
@@ -126,25 +110,4 @@ def ParseResponse(Msg):
                             Status_Dict["C_LimTrig"] = True
     else:
         Status_Dict["MSG"] = Msg.replace("\\r\\n","")
-    return
-
-def GetStatus():
-    Status_Dict["MSG"] = ''
-    command = "?" + "\n"
-    try:
-        tn.write(command.encode("ascii"))
-        dict = ParseResponse(str(tn.read_until(b"\n", timeout=0.2)))
-        dict = ParseResponse(str(tn.read_until(b"\n", timeout=0.2)))   
-    except:
-        print("Failed to get Status Command - is dissconnected?")
-        Status_Dict["Status"] ='Disconnected'
-        Connection = False
-
-
-for x in range(100):
-    time.sleep(.2)
-    GetStatus()
-
-print("Exit")
-
-
+    return Status_Dict
